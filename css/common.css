@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.item img {
+  border: 1px solid blueviolet;
+  width: 230px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
