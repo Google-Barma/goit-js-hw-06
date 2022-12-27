@@ -28,7 +28,7 @@ button {
   width: 230px;
 }
 
-ul {
+.gallery {
   display: flex;
   justify-content: space-around;
 }
