@@ -21,10 +21,10 @@ const destroyBoxes = () => {
 };
 
 const createBoxes = (amount) => {
-  const boxes = [];
+  const markup = [];
 
   // for (let i = 0; i < amount; i++) {
-  //   boxes.push(
+  //   markup.push(
   //     `<div style="background-color: ${getRandomHexColor()}; width: ${
   //       !i ? width : (width += 10)
   //     }px; height: ${
@@ -35,7 +35,7 @@ const createBoxes = (amount) => {
   //   );
   // }
 
-  // refs.boxes.innerHTML = boxes.join("");
+  // refs.boxes.innerHTML = markup.join("");
 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
@@ -43,10 +43,10 @@ const createBoxes = (amount) => {
     box.style.width = `${!i ? width : (width += 10)}px`;
     box.style.height = `${!i ? height : (height += 10)}px`;
 
-    boxes.push(box);
+    markup.push(box);
   }
 
-  refs.boxes.append(...boxes);
+  refs.boxes.append(...markup);
 };
 
 const onPushCreateBtn = () => {
